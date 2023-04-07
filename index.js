@@ -43,3 +43,9 @@ fetch("http://127.0.0.1:5500/db.json")
       showList.appendChild(div);
     });
   });
+// Dark mode button functionality
+const darkMode = document.querySelector("#dark-mode");
+
+darkMode.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});

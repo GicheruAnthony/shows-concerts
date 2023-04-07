@@ -118,6 +118,9 @@
   .bs_header_layout_5 .dropdown-item {
     text-align: center;
   }
+  .navbar-nav {
+    position: sticky;
+  }
 }
 
 /* end of Header - 3 column layout with action buttons */
@@ -166,3 +169,18 @@
 }
 
 /* end of Image grid 4 */
+
+/* Dark mode button*/
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  transition: background-color 0.5s ease;
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: #f5f5f5;
+}
+.footer {
+  text-align: center;
+}
