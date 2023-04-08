@@ -58,14 +58,32 @@
                             <div class="bs_header_btn_wrapper bs_signin_btn_blk">
                                 <div class="nav-item nav-link bs_signin_btn">
                                     <a href="#" class="nav-item nav-link bs_signin_btn">Sign In</a>
-                                    </form>
+
                                 </div>
                             </div>
                         </div>
 
                         <div class="bs_header_btn_wrapper bs_signup_btn_blk">
 
-                            <a href="#" class="nav-item nav-link bg-primary text-white bs_signup_btn">Sign Up</a>
+                            <a href="#" class="nav-item nav-link bg-primary text-white bs_signup_btn "
+                                onclick="openForm()">Sign Up</a>
+                            <div class="form-popup" id="myForm">
+                                <form action="mailto:giterugicheru@gmail.com" method="post" class="form-container">
+                                    <h2>Sign Up</h2>
+
+                                    <label for="name"><b>Name</b></label>
+                                    <input type="text" placeholder="Enter Your Name" name="name" required>
+
+                                    <label for="email"><b>Email</b></label>
+                                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                    <button type="submit" class="btn">Sign Up</button>
+                                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                                </form>
+                            </div>
                         </div>
 
                     </div>
@@ -76,10 +94,11 @@
     </header>
 
     <!-- end of header with action buttons -->
+    <h1>whatSHAPPENIN?</h1>
 
 
 
-    <!-- start of Image grid 4 -->
+    <!-- start of images -->
     <div class="bs_imagegrid_section4">
         <div class="container py-5">
             <div class="py-2 text-center">

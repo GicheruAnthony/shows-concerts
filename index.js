@@ -49,3 +49,15 @@ const darkMode = document.querySelector("#dark-mode");
 darkMode.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const heading = document.querySelector("h1");
+  heading.style.color = "red";
+});
