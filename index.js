@@ -43,12 +43,31 @@ fetch("http://127.0.0.1:5500/db.json")
       showList.appendChild(div);
     });
   });
-// Dark mode button functionality
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+// Dark mode button functionality start
 const darkMode = document.querySelector("#dark-mode");
 
 darkMode.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
+
+//Dark mode button functionality end
+
+//Sign up form start
 function openForm() {
   document.getElementById("myForm").style.display = "block";
 }
@@ -61,3 +80,4 @@ document.addEventListener("DOMContentLoaded", function () {
   const heading = document.querySelector("h1");
   heading.style.color = "red";
 });
+//Sign up form end
